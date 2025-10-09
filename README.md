@@ -26,7 +26,7 @@ Durante o desenvolvimento, pratiquei:
 ## 🗂️ Estrutura do projeto
 
 ```bash
-📦 linktree-clone
+📦 Linktree
  ┣ 📜 index.html
  ┣ 📜 style.css
  ┣ 📂 assets/       
