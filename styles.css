@@ -22,10 +22,10 @@ body, html {
 
 body {
     color: var(--quaternary-color);
-    background-color: rgb(0, 0, 0);
     font-family: var(--font-family);
     background-image: url(/assets/background.jpeg);
-    background-size: cover;
+    background-size: cover; /* Cobrir toda a área de fundo */
+    background-position: center; /* Centralizar a imagem de fundo */    
 }
 
 body::-webkit-scrollbar {
@@ -37,18 +37,26 @@ body::-webkit-scrollbar {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%; /* Garantir que o contêiner ocupe toda a largura */
-    max-width: 600px; /* Limitar largura máxima em telas grandes */
-    margin: 0 auto; /* Centralizar o contêiner */
-    padding: 20px; /* Ajustar padding */
+    width: 100%;
+    margin: 0 auto; 
+    padding: 20px 30px 0px 30px; 
 }
-
+.card {
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.562); 
+    border: 2px solid #ffffff18; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    padding: 30px;  
+    margin: 20px auto; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px; 
+}
 .rosto {
-    max-width: 100%; /* Garantir que a imagem não ultrapasse o contêiner */
-    width: 200px; /* Tamanho padrão da imagem */
-    height: auto;
-    display: block;
-    border-radius: 50%; /* Tornar a imagem circular */
+    width: 200px;
+    border-radius: 50%; 
     border: 2px solid var(--terceary-color);
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -59,30 +67,23 @@ body::-webkit-scrollbar {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-a.button {
+.button {
     border: 3px solid var(--secondary-color);
     border-radius: 10px;
     padding: 10px 20px;
     color: white;
     text-decoration: none;
-    transition: all 0.3s ease;
     font-weight: bolder;
     text-align: center;
-    width: 100%; /* Botão ocupa toda a largura em telas menores */
-    max-width: 100%; /* Limitar largura máxima */
+    width: 100%;
+    transition: all 0.3s ease;
 }
 
-a.button:hover {
+.button:hover {
     background-color: var(--terceary-color);
     color: black;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
-}
-
-p {
-    text-align: center;
-    line-height: 1.5;
-    font-size: 18px;
 }
 
 h4 {
@@ -91,22 +92,7 @@ h4 {
     margin-bottom: 10px;
 }
 
-.card {
-    background-color: rgba(0, 0, 0, 0.562); 
-    border: 2px solid #ffffff18; 
-    border-radius: 15px; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
-    padding: 30px; 
-    width: 100%; 
-    max-width: 700px; 
-    margin: 20px auto; 
-    overflow: hidden; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px; 
-}
+
 
 /* Media Queries para telas menores */
 @media (max-width: 768px) {
