@@ -1,8 +1,8 @@
 # Linktree
-# 🌐 Mini Linktree — Projeto de Prática com HTML e CSS
+# 🌐 Mini Link in bio — Projeto de Prática com HTML e CSS
 
 Este é um projeto simples desenvolvido para praticar meus conhecimentos em **HTML** e **CSS**.  
-O objetivo foi recriar o estilo de um **Linktree personalizado**, com design limpo e links centralizados.  
+O objetivo foi recriar o estilo de um **Link in bio personalizado**, com design limpo e links centralizados.  
 
 ## 🧠 Aprendizados
 
