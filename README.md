@@ -1,4 +1,4 @@
-# Linktree
+# Link In Bio
 # 🌐 Mini Link in bio — Projeto de Prática com HTML e CSS
 
 Este é um projeto simples desenvolvido para praticar meus conhecimentos em **HTML** e **CSS**.  
