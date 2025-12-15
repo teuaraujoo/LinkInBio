@@ -17,15 +17,12 @@
 body, html {
     height: 100%;
     width: 100%;
-    overflow-x: hidden; /* Evitar rolagem horizontal */
 }
 
 body {
     color: var(--quaternary-color);
     font-family: var(--font-family);
-    background-image: url(/assets/background.jpeg);
-    background-size: cover; /* Cobrir toda a área de fundo */
-    background-position: center; /* Centralizar a imagem de fundo */    
+    background: url(/assets/background.jpeg) no-repeat center/cover;
 }
 
 body::-webkit-scrollbar {
@@ -38,8 +35,7 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 0 auto; 
-    padding: 20px 30px 0px 30px; 
+    animation: alternate fadein 1s;
 }
 .card {
     width: 600px;
@@ -56,15 +52,11 @@ body::-webkit-scrollbar {
 }
 .rosto {
     width: 200px;
+    height: 200px;
     border-radius: 50%; 
     border: 2px solid var(--terceary-color);
-    transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.rosto:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background: url(./assets/decimarosto.png) no-repeat center/cover;
 }
 
 .button {
@@ -92,17 +84,19 @@ h4 {
     margin-bottom: 10px;
 }
 
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
-
-/* Media Queries para telas menores */
 @media (max-width: 768px) {
     .container {
         padding: 10px; /* Reduzir padding */
         gap: 10px; /* Ajustar espaçamento */
-    }
-
-    .rosto {
-        width: 150px; /* Reduzir tamanho da imagem */
     }
 
     p {
